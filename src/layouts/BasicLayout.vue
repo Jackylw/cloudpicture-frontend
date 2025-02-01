@@ -1,0 +1,41 @@
+<template>
+  <div id="basicLayout">
+    <a-layout style="min-height: 100vh">
+      <a-layout-header class="header">
+        <GlobalHeader />
+      </a-layout-header>
+      <a-layout-content class="content">
+        123123
+      </a-layout-content>
+      <a-layout-footer class="footer">
+        <a href="" target="_blank"> copyright 123 </a>
+      </a-layout-footer>
+    </a-layout>
+  </div>
+</template>
+<script setup lang="ts">
+import GlobalHeader from '@/components/GlobalHeader.vue'
+</script>
+<style scoped>
+#basicLayout .header {
+  background: #fff;
+  padding-inline: 20px;
+  margin-bottom: 16px;
+  color: unset;
+}
+#basicLayout .footer {
+  background: #efefef;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#basicLayout .content {
+  background: linear-gradient(to right, #fefefe, #fff);
+  margin-bottom: 28px;
+  padding: 20px;
+}
+</style>
