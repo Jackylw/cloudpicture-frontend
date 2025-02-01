@@ -5,7 +5,7 @@
         <GlobalHeader />
       </a-layout-header>
       <a-layout-content class="content">
-        123123
+        <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
         <a href="" target="_blank"> copyright 123 </a>
