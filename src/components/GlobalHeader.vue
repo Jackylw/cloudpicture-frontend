@@ -69,9 +69,14 @@ const originItems = [
   },
   {
     key: 'others',
-    label: h('a', { href: 'https://www.codefather.cn', target: '_blank' }, '编程导航'),
-    title: '编程导航',
+    label: h('a', { href: 'https://docs.fexample.top', target: '_blank' }, '个人文档库'),
+    title: '个人文档库',
   },
+  {
+    key: '/add_picture',
+    label: '创建图片',
+    title: '创建图片',
+  }
 ]
 
 // 过滤菜单项
