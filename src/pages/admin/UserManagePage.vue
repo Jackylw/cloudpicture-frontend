@@ -82,6 +82,10 @@ const columns = [
   },
 ]
 
+// 定义数据
+const dataList = ref<API.UserVO[]>([])
+const total = ref(0)
+
 // 分页参数
 const pagination = computed(() => {
   return {
@@ -106,10 +110,6 @@ const doSearch = () => {
   searchParams.current = 1
   fetchData()
 }
-
-// 定义数据
-const dataList = ref([])
-const total = ref(0)
 
 // 搜索条件
 const searchParams = reactive<API.UserQueryRequest>({
